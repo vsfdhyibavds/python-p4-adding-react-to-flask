@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+/**
+ * NewMessage component renders a form to create a new message.
+ * It sends a POST request to the backend and updates the parent state on success.
+ */
 function NewMessage({ currentUser, onAddMessage }) {
   const [body, setBody] = useState("");
 

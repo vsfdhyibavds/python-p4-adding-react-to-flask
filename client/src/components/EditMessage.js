@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+/**
+ * EditMessage component renders a form to edit an existing message.
+ * Sends a PATCH request to update the message on the backend and updates parent state on success.
+ */
 function EditMessage({ id, body, onUpdateMessage }) {
   const [messageBody, setMessageBody] = useState(body);
 

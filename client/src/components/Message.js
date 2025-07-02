@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import EditMessage from "./EditMessage";
 
+/**
+ * Message component renders an individual message with options to edit or delete if the current user is the author.
+ * Handles toggling edit mode and sending delete requests to the backend.
+ */
 function Message({ message, currentUser, onMessageDelete, onUpdateMessage }) {
   const [isEditing, setIsEditing] = useState(false);
 

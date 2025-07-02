@@ -1,6 +1,10 @@
 import React from "react";
 import Message from "./Message";
 
+/**
+ * MessageList component renders a list of Message components.
+ * Passes down message data and handlers for delete and update actions.
+ */
 function MessageList({
   messages,
   currentUser,
